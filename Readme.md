@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Нилова](https://up.htmlacademy.ru/htmlcss/39/user/2489203).
-* Наставник: [Ирина Малиновская] (https://htmlacademy.ru/profile/irina-malinovskaya).
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
