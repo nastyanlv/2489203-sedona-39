@@ -2,6 +2,7 @@
 
 * Студент: [Анастасия Нилова](https://up.htmlacademy.ru/htmlcss/39/user/2489203).
 * Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
+* Сайт: [Мой проект Седона](https://nastyanlv.github.io/2489203-sedona-39/)
 
 ---
 
