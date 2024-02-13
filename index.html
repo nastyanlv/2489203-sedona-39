@@ -10,7 +10,7 @@
   </head>
   <body>
 
-<header class="page-header">
+<header class="page-header" data-test="header">
   <a class="navigation-logo" href="index.html" aria-current="page"><img src="images/logo.svg" alt="city of sedona" class="logo" width="140" height="70"></a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -37,8 +37,8 @@
   <a class="header-button" href="search">Хочу сюда!</a>
 </header>
 
-<main class="main-index">
-  <section class="advantages">
+<main class="main-index" data-test="main">
+  <section class="advantages" data-test="advantages">
   <h1 class="visually-hidden">О городе Седона</h1>
   <!-- или интро отдельно в секцию -->
     <img src="images/welcome.svg" width="458" height="352" alt="welcome">
@@ -92,7 +92,7 @@
 </ul>
     </section>
 
-    <section class="search-hotels">
+    <section class="search-hotels" data-test="search">
       <h2 class="search-hotels visually-hidden">Поиск гостиниц</h2>
       <h3 class="search-hotels-title">Заинтересовались?</h3>
       <p class="search-hotels-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -109,7 +109,7 @@
       <button type="submit">Отправить</button>
     </form> -->
 
-    <section class="appoitment">
+    <section class="appoitment" data-test="subscribe">
       <h2 class="appointment-title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -119,7 +119,7 @@
       </form>
     </section>
 
-    <footer>
+    <footer data-test="footer">
           <li class="social-item">
               <a class="button" href="#">
                 <span class="visually-hidden">ВКонтакте</span>

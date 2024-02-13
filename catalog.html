@@ -6,7 +6,7 @@
     <title>Гостиницы Седоны</title>
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header" data-test="header">
     <a class="navigation-logo" href="index.html" aria-current="page"><img src="images/logo.svg" alt="city of sedona" class="logo" width="140" height="70"></a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -32,7 +32,7 @@
     <a class="header-button" href="search">Хочу сюда!</a>
   </header>
 
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -49,7 +49,7 @@
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group" data-test="filter">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -126,7 +126,7 @@
           <span class="visually-hidden">Показать список</span>
         </a>
 
-<section class="catalog">
+<section class="catalog" data-test="catalog">
         <ul class="product-list">
           <li class="product-card">
           <a class="product-card-link" href="product.html">
@@ -208,7 +208,7 @@
 </section>
 
 
-      <section class="appoitment">
+      <section class="appoitment" data-test="subscribe">
         <h2 class="appointment-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -218,7 +218,7 @@
         </form>
       </section>
 
-    <footer>
+    <footer data-test="footer">
       <li class="social-item">
           <a class="button" href="#">
             <span class="visually-hidden">ВКонтакте</span>

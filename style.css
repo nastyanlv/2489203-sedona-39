@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+/* font-family: 'PT Sans', sans-serif; */
+
+:root {
+    /* Переменные для шрифтов */
+    --main-font: 'PT Sans', sans-serif;
+
+}
+header {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 70px 0 70px;
+    position: fixed;
+}
+.menu {
+    display: flex;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/index-background.jpg);
+    background-size: cover;
+    background-position: top center;
+}
