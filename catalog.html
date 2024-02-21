@@ -40,7 +40,7 @@
   </header>
 
     <main class="main-inner" data-test="main">
-      <!-- <header class="inner-header"> -->
+      <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -50,7 +50,6 @@
           <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
           </li>
           </ul>
-      <!-- </header> -->
 
       <section class="filters" data-test="filter">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -62,17 +61,14 @@
               <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="checkbox" name="swiming-pool" checked>
-
               Бассейн
             </label>
             <label class="control">
               <input class="control-input" type="checkbox" name="parking" checked>
-
               Парковка
             </label>
             <label class="control">
               <input class="control-input" type="checkbox" name="wi-fi">
-
               Wi-Fi
             </label>
             </li>
@@ -84,28 +80,24 @@
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="product-group" value="hotel" checked>
-
             Гостиница
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="product-group" value="motel">
-
             Мотель
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="product-group" value="appartment">
-
             Апартаменты
               </label>
             </li>
           </ul>
         </fieldset>
-
-<fieldset class="catalog-filter-group">
+<fieldset class="catalog-filter-group-price">
   <legend class="catalog-filter-title">Стоимость <span>₽:</span></legend>
   <label class="filter-range-control">от<input type="text" name="min-interval" value="0"></label>
   <label class="ilter-range-control">до<input type="text" name="max-interval" value="9000"></label>
@@ -116,13 +108,12 @@
     <!-- class="range-toggle toggle-max" -->
     <span class="visually-hidden">Управление верхней границы стоимости</span>
   </button>
-</fieldset>
-<button class="catalog-filter-button" type="submit">Применить</button>
+  <button class="catalog-filter-button" type="submit">Применить</button>
 <button class="catalog-filter-button" type="reset">Сбросить</button>
 </form>
+</fieldset>
 </section>
-
-
+</header>
 
 <section class="catalog" data-test="catalog">
   <h2 class="catalog-products-title">Найдено гостиниц: 38</h2>
@@ -150,7 +141,7 @@
           <li class="product-card">
           <a class="product-card-link" href="product.html">
             <img class="product-card-image" src="images/hotel-1.jpg" alt="Amara" width="300" height="212">
-            <h3 class="product-card-title"></h3>
+            <h3 class="product-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="product-card-text">Гостиница</p>
           <p class="product-card-price">От 4000 ₽</p>
@@ -241,7 +232,7 @@
   <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
     <label class="visually-hidden" for="subscribe">Ваш email</label>
     <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-    <button class="button subscribe" type="submit">Подписаться</button>
+    <button class="button-subscribe" type="submit">Подписаться</button>
   </form>
 </section>
 
@@ -268,7 +259,7 @@
         </li>
       </ul>
       <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="#"><img src="images/html-academy.svg" alt="htmlacademy" class="logo"></a>
+      <a class="footer-logo" href="#"><img src="images/html-academy.svg" alt="htmlacademy" class="logo"></a>
       <!-- не добавлять изобраджение тэг хтмлакадемии -->
 </footer>
   </main>
