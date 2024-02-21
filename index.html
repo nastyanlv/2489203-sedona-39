@@ -2,17 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Седона</title>
+<title>Седона</title>
   </head>
   <body>
 
 <header class="page-header" data-test="header">
-  <a class="navigation-logo" href="index.html" aria-current="page"><img src="images/logo.svg" alt="city of sedona" class="logo" width="140" height="70"></a>
-    <nav class="navigation">
+  <nav class="navigation">
+  <a class="navigation-logo" href="index.html" aria-current="page">
+    <img src="images/logo.svg" alt="city of sedona" class="logo" width="140" height="70"></a>
       <ul class="navigation-list">
         <li class="navigation-item"><a class=navigation-link href="#">Главная</a></li>
         <li class="navigation-item"><a class=navigation-link href="#">О Седоне</a></li>
@@ -23,32 +24,36 @@
           <a class="navigation-link" href="#">
           <span class="visually-hidden">
           Поиск
-        </span><img class="search" src="images/icons/search.svg" width="20" height="20" alt="search">
+        </span>
+        <!-- <img class="search" src="images/icons/search.svg" width="20" height="20" alt="search"> -->
       </a></li>
         <li class="navigation-user-item"><a class="navigation-link" href="#">
           <span class="visually-hidden">
           Избранное
-        </span><img class="favorite" src="images/icons/heart.svg" width="20" height="20" alt="favorite">
+        </span>
+        <!-- <img class="favorite" src="images/icons/heart.svg" width="20" height="20" alt="favorite"> -->
         <span class="favorite">12</span>
       </a></li>
-      <li class="navigation-user-item">
     </ul>
   </nav>
   <a class="header-button" href="search">Хочу сюда!</a>
 </header>
 
 <main class="main-index" data-test="main">
-  <section class="advantages" data-test="advantages">
+ <section class="intro">
   <h1 class="visually-hidden">О городе Седона</h1>
-  <!-- или интро отдельно в секцию -->
     <img src="images/welcome.svg" width="458" height="352" alt="welcome">
+  </section>
+
+    <section class="advantages" data-test="advantages">
     <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="advantages-title-text">Рассмотрим причины, по которым Седона круче, чем Гранд-каньон</p>
       <ul class="advantages-list">
 <li class="advantages-item">
+  <!-- добавить основным цвет потомка? или четное нечетное -->
   <h3>Настоящий городок</h3>
 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-<img src="images/advantages-1.jpg" alt="">
+<img src="images/advantages-1.jpg" width="800" height="385" alt="Здание с флагом">
 </li>
 <li class="advantages-item">
   <h3>Небольшая площадь</h3>
@@ -65,7 +70,7 @@
 <li class="advantages-item">
   <h3>Там есть мост дьявола</h3>
 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-<img src="images/advantages-2.jpg" alt="">
+<img src="images/advantages-2.jpg" width="800" height="385" alt="Каменный мост">
 </li>
 </ul>
     </section>
@@ -76,6 +81,7 @@
       <ul class="services-list">
         <li class="services-item">
           <img src="images/advantage-icon.svg" alt="house" width="75" height="72">
+          <!-- изображения не добавлять в разметку, добавляем в стили ксс -->
       <h3 class="services-subtitle">Жильё</h3>
       <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </li>
@@ -93,10 +99,10 @@
     </section>
 
     <section class="search-hotels" data-test="search">
-      <h2 class="search-hotels visually-hidden">Поиск гостиниц</h2>
+      <!-- <h2 class="search-hotels visually-hidden">Поиск гостиниц</h2> -->
       <h3 class="search-hotels-title">Заинтересовались?</h3>
       <p class="search-hotels-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="search-hotels-link" href="#">Поиск гостиницы в Седоне</a>
+      <a class="search-hotels-button" href="catalog.html">Поиск гостиницы в Седоне</a>
     </section>
 
     <!-- <form action="https://echo.htmlacademy.ru" action="#" method="post">
@@ -109,17 +115,18 @@
       <button type="submit">Отправить</button>
     </form> -->
 
-    <section class="appoitment" data-test="subscribe">
-      <h2 class="appointment-title">Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email">Ваш email</label>
+    <section class="subscribe" data-test="subscribe">
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="subscribe">Ваш email</label>
         <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">Подписаться</button>
+        <button class="button-subscribe" type="submit">Подписаться</button>
       </form>
     </section>
 
     <footer data-test="footer">
+      <ul class="social-list">
           <li class="social-item">
               <a class="button" href="#">
                 <span class="visually-hidden">ВКонтакте</span>
@@ -130,6 +137,7 @@
               <a class="button" href="#">
                 <span class="visually-hidden">Телеграмм</span>
                 <img src="images/social-telegram.svg" alt="tg">
+                <!-- не добавлять иконки, будут через стили -->
               </a>
             </li>
             <li class="social-item">
@@ -138,8 +146,10 @@
                 <img src="images/social-youtube.svg" alt="youtube">
               </a>
             </li>
+          </ul>
           <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a href="#"><img src="images/html-academy.svg" alt="htmlacademy" class="logo"></a>
+          <!-- не добавлять изобраджение тэг хтмлакадемии -->
     </footer>
 </main>
   </body>
